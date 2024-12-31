@@ -28,11 +28,11 @@ function App() {
 
         <form onSubmit={(e)=>handleSubmit(e,rate, term, amount, setResult, type, errors, setErrors)}>
           
-          <InputComponent error={errors.amountError} handleChange={(e) => handleSetFunction(e,setAmount)} label={"Mortgage Amount"} id={"amount"} styles="mt-4" state={amount}/>
+          <InputComponent symbol="&#8356;" error={errors.amountError} handleChange={(e) => handleSetFunction(e,setAmount)} label={"Mortgage Amount"} id={"amount"} styles="mt-4" state={amount}/>
           
           <div className="md:flex gap-4 mt-4">
-            <InputComponent error={errors.termError} handleChange={(e) => handleSetFunction(e, setTerm)} label={"Mortgage Term"} id={"term"} state={term} />
-            <InputComponent error={errors.rateError} styles="mt-4 md:mt-0" label={"Interest Rate"} id={"rate"} state={rate} handleChange={(e) => handleSetFunction(e, setRate)} />
+            <InputComponent symbol="years" order="order-0" error={errors.termError} handleChange={(e) => handleSetFunction(e, setTerm)} label={"Mortgage Term"} id={"term"} state={term} />
+            <InputComponent symbol="%" order="order-0" error={errors.rateError} styles="mt-4 md:mt-0" label={"Interest Rate"} id={"rate"} state={rate} handleChange={(e) => handleSetFunction(e, setRate)} />
           </div>
 
           <div>
