@@ -52,6 +52,14 @@ export   function handleSubmit(e: formEventType, rate: string, term:string, amou
     const totalPayments = Number(term) * 12;
     const monthlyRepayment = (Number(amount) * monthlyRate * Math.pow(1 + monthlyRate, totalPayments)) / (Math.pow(1 + monthlyRate, totalPayments) - 1);
   
+    if(isNaN(monthlyRepayment)){
+      newErrors.amountError = "Amount is to big";
+      newErrors.termError = "Term to big";
+
+      setErrors(newErrors);
+      return 
+    }
+
     const totalRepaid = monthlyRepayment * totalPayments;
 
     const monthy = monthlyRepayment.toFixed(2);
