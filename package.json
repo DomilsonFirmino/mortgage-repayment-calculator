@@ -1,17 +1,14 @@
 {
   "name": "mortgage-repayment-calculator",
-  "homepage": "https://domilsonfirmino.github.io/mortgage-repayment-calculator/   ",
+  "homepage": "https://domilsonfirmino.github.io/mortgage-repayment-calculator/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "gh-pages": {
-  "cache": "false"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
