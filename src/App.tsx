@@ -44,7 +44,7 @@ function App() {
             <p className="text-Red mt-2">{errors.typeError}</p>
           </div>
 
-          <button className="mt-4 flex gap-1 sm:justify-normal justify-center lg:w-auto w-full rounded-full bg-lime-400 px-4 py-2">
+          <button className="mt-4 flex gap-1 sm:justify-normal justify-center lg:w-auto w-full rounded-full hover:bg-lime-300 transition-all bg-lime-400 px-4 py-2">
               <Calculator />
               <p className="font-bold text-slate-900">Calculate Repayments</p>
           </button>

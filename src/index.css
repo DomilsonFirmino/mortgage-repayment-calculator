@@ -9,3 +9,8 @@ html, body{
 #root{
     @apply h-full grid md:place-content-center md:mt-0 mt-4 bg-slate-300;
 }
+
+@font-face {
+    font-family: "PlusJakarta";
+    src: url("../assets/fonts/PlusJakartaSans-Italic-VariableFont_wght.ttf");
+}

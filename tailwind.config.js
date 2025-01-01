@@ -24,6 +24,9 @@ export default {
       }
     }
   },
+  fontFamily :{
+    PlusJakarta: ["PlusJakarta","sans"]
+  }  ,
   plugins: [],
 }
 
