@@ -26,7 +26,7 @@ function App() {
           <button className="underline text-slate-300" onClick={()=>resetStates(setRate, setTerm, setAmount,setType, setResult)}>Clear all</button>
         </div>
 
-        <form onSubmit={(e)=>handleSubmit(e,rate, term, amount, setResult, type, errors, setErrors)}>
+        <form onSubmit={(e)=>handleSubmit(e,rate, term, amount, setResult, type, setErrors)}>
           
           <InputComponent symbol="&#8356;" error={errors.amountError} handleChange={(e) => handleSetFunction(e,setAmount)} label={"Mortgage Amount"} id={"amount"} styles="mt-4" state={amount}/>
           

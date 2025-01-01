@@ -7,7 +7,7 @@ export function handleSetFunction(e: formEventTypeInput, setState: setStateStrin
     }
 }
 
-export   function handleSubmit(e: formEventType, rate: string, term:string, amount:string, setResult: setResultType,type: valueType,errors: errorsType , setErrors: setErrorsType){
+export   function handleSubmit(e: formEventType, rate: string, term:string, amount:string, setResult: setResultType,type: valueType, setErrors: setErrorsType){
     e.preventDefault()
     //errors check;
 
